@@ -1,0 +1,136 @@
+/* Estilo global para remover margens e preenchimentos */
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que o html e o body ocupem toda a altura da janela do navegador */
+}
+
+body {
+    display: flex; /* Permite o uso de flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    background-color: #602f18;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.6;
+    
+}
+
+header { 
+    background: #A0522D;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+}
+
+img {
+    max-width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    flex: 1; /* Permite que o main cresça e ocupe o espaço disponível */
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Altura mínima subtraindo a altura do header e do footer */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #A0522D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid #A0522D; /* Borda ao redor do slider */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra ao redor do slider */
+}
+
+.slider .radio-buttons {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    position: absolute; /* Permite posicionamento absoluto */
+    bottom: 10px; /* Distância do fundo do slider */
+    left: 0;
+    right: 0; /* Garante que a div ocupe toda a largura */
+    z-index: 10; /* Coloca as bolinhas acima dos slides */
+}
+
+.slides {
+    display: flex;
+    transition: transform 1.5s ease;
+    width: 100%; /* Garante que as slides ocupem toda a largura */
+}
+
+.slide {
+    min-width: 100%;
+    position: relative; /* Para permitir posicionamento absoluto de elementos internos */
+}
+
+.slide img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Cantos arredondados nas imagens */
+}
+
+.radio-btn {
+    display: none; /* Esconde os botões de rádio */
+}
+
+
+/* Estilo para os botões de navegação */
+.slider .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider .nav-btn.prev {
+    left: 10px; /* Botão da esquerda */
+}
+
+.slider .nav-btn.next {
+    right: 10px; /* Botão da direita */
+}
+
+

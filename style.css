@@ -132,3 +132,66 @@ footer {
     color: white;
     text-align: center;
 }
+
+hr {
+    width: 80%;
+    height: 1px;
+    border: 1px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: #dddddd;
+}
+
+.projects h2{
+    font-family: "Oswald", sans-serif;
+}
+
+.projects button{
+    font-size: 18px;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.projects button:hover {
+    background-color: #717f88;
+}
+
+.container-projects {
+    display: flex; /* ou display: grid; para usar grid */
+    justify-content: space-around; /* Alinha os cards com espaço entre eles */
+    padding: 20px;
+}
+
+.card {
+    background-color: transparen1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 20vw; /* Largura fixa para os cards */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.card:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Aumenta o efeito de sombra quando o card é hoverado */
+    transform: scale(1.02); /* Aumenta a escala do card quando é hoverado */
+}
+
+.card img { 
+    max-width: 100%;/* Faz a imagem ocupar a largura máxima do card */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    height: 10vw;
+    width: 20svw;
+}
+
+.gif-code{
+    width: 125px;
+    padding: 12px;
+    margin: 12px;
+}
