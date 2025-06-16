@@ -87,9 +87,8 @@ header {
     color: #717f88;
 }
 
-/* Estilização da seção About Me */
 main {
-    flex: 1; /* Faz o main ocupar o espaço restante */
+    flex: 1; 
     padding: 20px;
 }
 
